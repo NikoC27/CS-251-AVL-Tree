@@ -64,7 +64,6 @@ private:
 			return;        // has ended so return
 		else
 		{
-		
 			/* Insert key and value into the node */
 			_insert(cur->Key, cur->Value);
 			_copy(cur->Left); // Go Left
@@ -114,7 +113,6 @@ private:
 	 * and updates the height */
 	void _LeftRotate(NODE* Parent, NODE* N)
 	{
-		
 		NODE* A = N->Left;        // 100   N      
 		NODE* R = N->Right;       //  
 		NODE* B = R->Left;        //     110   R
@@ -187,7 +185,6 @@ private:
 	  * and updates the height */
 	 void _RightRotate(NODE* Parent, NODE* N)
 	 {
-		 
 		 NODE* L = N->Left;        //            3   N      
 		 NODE* A = L->Left;        //
 		 NODE* B = L->Right;       //        2    L
